@@ -35,3 +35,11 @@ Ablauf-Diagramm
 - Microservice-Architektur der Webservices
 - n8n und Webservices auf demselben K8s-Cluster betreiben. K3s für Edge-Szenarien
 - Sauberes Caching verwenden
+
+## Kundensicht
+
+### Akzeptanzkriterien
+
+Die Akzeptanzkriterien spiegeln sich exakt in den einzelnen Nodes wider. Was dahinter 
+
+Eine Abhnahme kann also anhand einer Workflow-Ausführung stattfinden. Alle Nodes grün und ausgegebene Daten (Output)  jeder Node korrekt: Abnahme bestanden
