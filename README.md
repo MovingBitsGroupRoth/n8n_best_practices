@@ -33,5 +33,5 @@ Ablauf-Diagramm
 #### Beste Performance
 
 - Microservice-Architektur
-- n8n und Websercices auf demselben K8s-Cluster betreiben. K3s für Edge-Szenarien
+- n8n und Webservices auf demselben K8s-Cluster betreiben. K3s für Edge-Szenarien
 - Sauberes Caching verwenden
