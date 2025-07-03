@@ -15,7 +15,9 @@ Code Node verwende ich sehr ungern. Business-Logik hat die unangenehme Eigenscha
 
 ## Business Logik
 
-### Webservice-Aufrufe für jede Kunden-Id 
+Business Logik ist hinter RESTful Webservices versteckt
+
+### Beispiel Webservice-Aufrufe für jede Kunden-Id 
 
 ```matematica
 Code Node (Array Kunden-IDs)
@@ -27,3 +29,9 @@ HTTP Request Node (API Call mit {{$json.kundenId}})
    (optional) Merge Node
 ```
 Ablauf-Diagramm
+
+#### Beste Performance
+
+- Microservice-Architektur
+- n8n und Websercices auf demselben K8s-Cluster betreiben. K3s für Edge-Szenarien
+- Sauberes Caching verwenden
