@@ -30,8 +30,8 @@ HTTP Request Node (API Call mit {{$json.kundenId}})
 ```
 Ablauf-Diagramm
 
-#### Beste Performance
+### Beste Performance
 
-- Microservice-Architektur
+- Microservice-Architektur der Webservices
 - n8n und Webservices auf demselben K8s-Cluster betreiben. K3s für Edge-Szenarien
 - Sauberes Caching verwenden
