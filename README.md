@@ -4,9 +4,9 @@
 
 ### Testdaten
 
-- Lokal als JSON-Array in JSON-File
+- Lokal als JSON-Array in JSON-Datei
 - Einlesen mit Read/Write Files Node
-- - Wenn Docker, dann aus Volume, das auf /files zeigt
+-- Wenn Docker, dann JSON-Datei aus Volume holen, das auf /files zeigt
 - Extract from File Node (JSON)
 
 ### Code in Code Node testen
