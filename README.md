@@ -15,14 +15,15 @@ Code Node verwende ich sehr ungern. Business-Logik hat die unangenehme Eigenscha
 
 ## Business Logik
 
-Ablauf-Diagramm:
+### Webservice-Aufrufe für jede Kunden-Id 
 
+```matematica
 Code Node (Array Kunden-IDs)
          |
-Split In Batches (Batch size: 1)
+Split In Batches Node (Batch size: 1)
          |
 HTTP Request Node (API Call mit {{$json.kundenId}})
          |
-   (optional) Merge
-
-
+   (optional) Merge Node
+```
+Ablauf-Diagramm
