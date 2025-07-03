@@ -43,3 +43,22 @@ Ablauf-Diagramm
 Die Akzeptanzkriterien spiegeln sich exakt in den einzelnen Nodes wider. Was dahinter 
 
 Eine Abhnahme kann also anhand einer Workflow-Ausführung stattfinden. Alle Nodes grün und ausgegebene Daten (Output)  jeder Node korrekt: Abnahme bestanden
+
+## CI / CD
+
+Hier vorausgesetzt: n8n als Container
+
+Script:
+
+- Backup in Dev mit 
+```bash
+docker exec -it n8n n8n export:workflow --id=6L860swFiinot0A4 --output=/files/backup/workflow.json
+cp /files/backup/workflow.json /import/workflow.json
+```
+- Playright-Tests starten
+
+- Wenn Tests grün, QA import
+```bash
+docker exec -it n8n-container n8n import:workflow --input=/import/workflow.json
+```
+
